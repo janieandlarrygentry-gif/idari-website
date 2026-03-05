@@ -1,58 +1,113 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+
 <meta charset="UTF-8">
-<title>International Digital Asset Research Institute</title>
+
+<title>IDARI - International Digital Asset Research Institute</title>
 
 <style>
+
 body{
 margin:0;
-font-family:Arial;
-background:#0b0f18;
+font-family:Arial, Helvetica, sans-serif;
+background:#0a0f1c;
 color:white;
 }
 
 nav{
-background:#05080f;
-padding:20px;
 display:flex;
-justify-content:center;
-gap:40px;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-}
-
-header{
-text-align:center;
-padding:120px 20px;
-background:linear-gradient(#0b0f18,#111827);
-}
-
-section{
-max-width:1000px;
-margin:auto;
-padding:60px 20px;
-}
-
-.founder{
-display:flex;
-gap:40px;
+justify-content:space-between;
 align-items:center;
+padding:20px 80px;
+background:#050913;
+border-bottom:1px solid #1a2335;
 }
 
-.founder img{
-width:320px;
+.logo{
+font-size:20px;
+font-weight:bold;
+}
+
+.menu a{
+margin-left:30px;
+text-decoration:none;
+color:white;
+font-size:14px;
+}
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:120px 80px;
+}
+
+.hero-text{
+max-width:600px;
+}
+
+.hero-text h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero-text p{
+font-size:18px;
+color:#b6c2d9;
+}
+
+.hero img{
+width:420px;
 border-radius:10px;
 }
 
-footer{
-text-align:center;
-padding:40px;
-background:#05080f;
+.section{
+padding:100px 80px;
+max-width:1200px;
+margin:auto;
 }
+
+.section h2{
+font-size:36px;
+margin-bottom:30px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.card{
+background:#111a2e;
+padding:30px;
+border-radius:10px;
+}
+
+.stats{
+display:flex;
+justify-content:space-around;
+margin-top:60px;
+}
+
+.stat{
+text-align:center;
+}
+
+.stat h3{
+font-size:36px;
+margin:0;
+}
+
+footer{
+margin-top:100px;
+padding:40px;
+text-align:center;
+background:#050913;
+color:#9fb0d0;
+}
+
 </style>
 
 </head>
@@ -60,36 +115,114 @@ background:#05080f;
 <body>
 
 <nav>
-<a href="#">Home</a>
+
+<div class="logo">
+IDARI
+</div>
+
+<div class="menu">
 <a href="#">Instituto</a>
-<a href="#">Fundador</a>
+<a href="#">Pesquisa</a>
 <a href="#">Equipe</a>
+<a href="#">Publicações</a>
+<a href="#">Contato</a>
+</div>
+
 </nav>
 
-<header>
-<h1>International Digital Asset Research Institute</h1>
-<p>Instituto Internacional de Pesquisa em Ativos Digitais</p>
-</header>
+<section class="hero">
 
-<section>
-<h2>Fundador</h2>
+<div class="hero-text">
 
-<div class="founder">
+<h1>
+International Digital Asset Research Institute
+</h1>
 
-<img src="ricardo.jpg">
+<p>
+Instituto global dedicado à pesquisa em ativos digitais, macroeconomia e evolução dos sistemas financeiros.
+</p>
+
+<p>
+Fundado pelo economista Prof. Dr. Ricardo Azevedo.
+</p>
+
+</div>
 
 <div>
 
-<h3>Prof. Dr. Ricardo Azevedo</h3>
+<img src="ricardo.jpg">
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Sobre o Instituto</h2>
 
 <p>
-Economista e pesquisador especializado em macroeconomia e ativos digitais.
+
+O International Digital Asset Research Institute (IDARI) é uma organização global independente focada na pesquisa de ativos digitais, tecnologia blockchain e sistemas financeiros globais.
+
+Nossa equipe reúne economistas, pesquisadores de blockchain, cientistas de dados e analistas financeiros de diversos países.
+
 </p>
 
-<p>
-Mais de 20 anos de experiência em pesquisa financeira e mercados globais.
-</p>
+<div class="stats">
 
+<div class="stat">
+<h3>300+</h3>
+<p>Pesquisadores</p>
+</div>
+
+<div class="stat">
+<h3>20+</h3>
+<p>Países</p>
+</div>
+
+<div class="stat">
+<h3>6</h3>
+<p>Centros de Pesquisa</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Centros Globais</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>New York</h3>
+<p>Centro de pesquisa macroeconômica e mercados globais.</p>
+</div>
+
+<div class="card">
+<h3>São Paulo</h3>
+<p>Pesquisa de mercados emergentes e ativos digitais.</p>
+</div>
+
+<div class="card">
+<h3>London</h3>
+<p>Regulação financeira e inovação tecnológica.</p>
+</div>
+
+<div class="card">
+<h3>Singapore</h3>
+<p>Pesquisa de blockchain e Web3.</p>
+</div>
+
+<div class="card">
+<h3>Hong Kong</h3>
+<p>Análise de mercado asiático e fluxos de capital.</p>
+</div>
+
+<div class="card">
+<h3>Dubai</h3>
+<p>Inovação financeira e mercados emergentes.</p>
 </div>
 
 </div>
@@ -98,8 +231,13 @@ Mais de 20 anos de experiência em pesquisa financeira e mercados globais.
 
 <footer>
 
-<p>International Digital Asset Research Institute</p>
-<p>© 2026 IDARI</p>
+<p>
+International Digital Asset Research Institute
+</p>
+
+<p>
+© 2026 IDARI
+</p>
 
 </footer>
 
