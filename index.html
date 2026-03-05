@@ -4,9 +4,154 @@
 <head>
 
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>IDARI | International Digital Asset & AI Research Institute</title>
 
-<link rel="stylesheet" href="style.css">
+<style>
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#050914;
+color:white;
+}
+
+/* NAV */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+background:#02040a;
+border-bottom:1px solid #162037;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+}
+
+.logo span{
+display:block;
+font-size:11px;
+color:#7c8fb5;
+}
+
+.menu a{
+margin-left:30px;
+text-decoration:none;
+color:#b6c2e0;
+font-size:14px;
+}
+
+/* HERO */
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:120px 80px;
+}
+
+.hero-text{
+max-width:600px;
+}
+
+.hero-text h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero-text p{
+color:#9fb0d0;
+font-size:18px;
+}
+
+.hero img{
+width:420px;
+border-radius:12px;
+}
+
+/* STATS */
+
+.stats{
+display:flex;
+justify-content:space-around;
+padding:80px;
+background:#0b1326;
+}
+
+.stat{
+text-align:center;
+}
+
+.stat h2{
+font-size:42px;
+margin:0;
+}
+
+.stat p{
+color:#9fb0d0;
+}
+
+/* RESEARCH */
+
+.section{
+padding:100px 80px;
+max-width:1200px;
+margin:auto;
+}
+
+.section h2{
+font-size:36px;
+margin-bottom:40px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.card{
+background:#111a2e;
+padding:30px;
+border-radius:10px;
+}
+
+/* AI DASHBOARD */
+
+.dashboard{
+background:#0e1628;
+padding:80px;
+text-align:center;
+}
+
+.dashboard-box{
+display:flex;
+justify-content:space-around;
+margin-top:40px;
+}
+
+.dashboard-item{
+background:#111a2e;
+padding:30px;
+border-radius:10px;
+width:250px;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:40px;
+background:#02040a;
+color:#8c9cc2;
+}
+
+</style>
 
 </head>
 
@@ -15,17 +160,19 @@
 <nav>
 
 <div class="logo">
+
 IDARI
+<span>Digital Asset & AI Research Institute</span>
+
 </div>
 
 <div class="menu">
 
-<a href="index.html">Home</a>
-<a href="founder.html">Founder</a>
-<a href="research.html">Research</a>
-<a href="ai-lab.html">AI Lab</a>
-<a href="team.html">Team</a>
-<a href="publications.html">Publications</a>
+<a href="#">Home</a>
+<a href="#">Research</a>
+<a href="#">AI Lab</a>
+<a href="#">Team</a>
+<a href="#">Publications</a>
 
 </div>
 
@@ -40,16 +187,11 @@ International Digital Asset & AI Research Institute
 </h1>
 
 <p>
-
-Global research institute focused on digital assets,
-AI financial models and macroeconomic systems.
-
+Global research institute focused on digital assets, artificial intelligence and macroeconomic financial systems.
 </p>
 
 <p>
-
 Founded by Prof. Dr. Ricardo Azevedo.
-
 </p>
 
 </div>
@@ -82,25 +224,74 @@ Founded by Prof. Dr. Ricardo Azevedo.
 
 </section>
 
-<section class="research">
+<section class="section">
 
 <h2>Research Areas</h2>
 
-<div class="cards">
+<div class="grid">
 
 <div class="card">
+
 <h3>Digital Asset Markets</h3>
-<p>Research on global crypto market structure.</p>
+
+<p>
+Research on cryptocurrency market structure and liquidity systems.
+</p>
+
 </div>
 
 <div class="card">
+
 <h3>AI Financial Models</h3>
-<p>Artificial intelligence applied to financial markets.</p>
+
+<p>
+Artificial intelligence models applied to financial market prediction.
+</p>
+
 </div>
 
 <div class="card">
+
 <h3>Blockchain Systems</h3>
-<p>Research on decentralized economic systems.</p>
+
+<p>
+Research on decentralized networks and blockchain infrastructure.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="dashboard">
+
+<h2>AI Market Dashboard</h2>
+
+<div class="dashboard-box">
+
+<div class="dashboard-item">
+
+<h3>BTC AI Score</h3>
+
+<p>82 / 100</p>
+
+</div>
+
+<div class="dashboard-item">
+
+<h3>ETH Risk Index</h3>
+
+<p>Low</p>
+
+</div>
+
+<div class="dashboard-item">
+
+<h3>Liquidity Index</h3>
+
+<p>Moderate Expansion</p>
+
 </div>
 
 </div>
@@ -111,6 +302,10 @@ Founded by Prof. Dr. Ricardo Azevedo.
 
 <p>
 International Digital Asset & AI Research Institute
+</p>
+
+<p>
+© 2026 IDARI
 </p>
 
 </footer>
