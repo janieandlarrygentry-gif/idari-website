@@ -27,6 +27,8 @@ z-index:-1;
 background:#050914;
 }
 
+/* NAV */
+
 nav{
 display:flex;
 justify-content:space-between;
@@ -34,8 +36,6 @@ align-items:center;
 padding:20px 80px;
 background:#02040a;
 border-bottom:1px solid #162037;
-position:sticky;
-top:0;
 }
 
 .logo{
@@ -48,6 +48,8 @@ display:block;
 font-size:11px;
 color:#7c8fb5;
 }
+
+/* HERO */
 
 .hero{
 display:flex;
@@ -62,6 +64,7 @@ max-width:600px;
 
 .hero-text h1{
 font-size:48px;
+margin-bottom:20px;
 }
 
 .hero-text p{
@@ -69,10 +72,20 @@ color:#9fb0d0;
 font-size:18px;
 }
 
+.profile-card{
+margin-top:40px;
+background:#0e1628;
+padding:25px;
+border-radius:10px;
+}
+
 .hero img{
 width:420px;
 border-radius:12px;
+box-shadow:0 20px 60px rgba(0,0,0,0.6);
 }
+
+/* STATS */
 
 .stats{
 display:flex;
@@ -89,6 +102,8 @@ text-align:center;
 font-size:42px;
 margin:0;
 }
+
+/* SECTION */
 
 .section{
 padding:100px 80px;
@@ -108,14 +123,19 @@ padding:30px;
 border-radius:10px;
 }
 
+/* AI */
+
 .ai{
 background:#0e1628;
 }
 
+/* CHART */
+
 .chart{
 padding:100px 80px;
-text-align:center;
 }
+
+/* FOOTER */
 
 footer{
 text-align:center;
@@ -135,11 +155,14 @@ color:#8c9cc2;
 <nav>
 
 <div class="logo">
+
 IDARI
 <span>Digital Asset & AI Research Institute</span>
+
 </div>
 
 </nav>
+
 
 <section class="hero">
 
@@ -154,15 +177,37 @@ Global research institute focused on artificial intelligence,
 digital assets and macroeconomic financial systems.
 </p>
 
+<div class="profile-card">
+
+<h3>Prof. Dr. Ricardo Azevedo</h3>
+
 <p>
-Founded by Prof. Dr. Ricardo Azevedo.
+Economist and financial systems researcher with over 20 years of experience
+in macroeconomic analysis, digital assets and emerging financial technologies.
 </p>
+
+<p>
+Former research advisor to international investment institutions and financial
+technology initiatives in the United States and Latin America.
+</p>
+
+<p style="font-size:14px;color:#7c8fb5;">
+
+Education  
+• University of São Paulo — Economics  
+• Federal University of Rio de Janeiro — Financial Engineering  
+• State University of Campinas — PhD Development Economics
+
+</p>
+
+</div>
 
 </div>
 
 <img src="ricardo.jpg">
 
 </section>
+
 
 <section class="stats">
 
@@ -187,6 +232,7 @@ Founded by Prof. Dr. Ricardo Azevedo.
 </div>
 
 </section>
+
 
 <section class="section">
 
@@ -213,6 +259,7 @@ Founded by Prof. Dr. Ricardo Azevedo.
 
 </section>
 
+
 <section class="section ai">
 
 <h2>AI Research Lab</h2>
@@ -238,36 +285,39 @@ Founded by Prof. Dr. Ricardo Azevedo.
 
 </section>
 
+
 <section class="chart">
 
-<h2>BTC Market Chart</h2>
+<h2 style="text-align:center;">BTC Market Chart</h2>
 
-<!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
-  <div id="tradingview_chart"></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-  <script type="text/javascript">
-  new TradingView.widget(
-  {
-  "width": "100%",
-  "height": 500,
-  "symbol": "BINANCE:BTCUSDT",
-  "interval": "D",
-  "timezone": "Etc/UTC",
-  "theme": "dark",
-  "style": "1",
-  "locale": "en",
-  "toolbar_bg": "#050914",
-  "enable_publishing": false,
-  "hide_top_toolbar": false,
-  "container_id": "tradingview_chart"
-}
-  );
-  </script>
+
+<div id="tradingview_chart"></div>
+
+<script src="https://s3.tradingview.com/tv.js"></script>
+
+<script>
+
+new TradingView.widget({
+width:"100%",
+height:500,
+symbol:"BINANCE:BTCUSDT",
+interval:"D",
+timezone:"Etc/UTC",
+theme:"dark",
+style:"1",
+locale:"en",
+toolbar_bg:"#050914",
+enable_publishing:false,
+container_id:"tradingview_chart"
+});
+
+</script>
+
 </div>
-<!-- TradingView Widget END -->
 
 </section>
+
 
 <section class="section">
 
@@ -275,39 +325,22 @@ Founded by Prof. Dr. Ricardo Azevedo.
 
 <div class="grid">
 
-<div class="card">
-<h3>New York</h3>
-<p>Global macroeconomic research center.</p>
-</div>
+<div class="card"><h3>New York</h3><p>Global macroeconomic research center.</p></div>
 
-<div class="card">
-<h3>São Paulo</h3>
-<p>Emerging market digital asset research.</p>
-</div>
+<div class="card"><h3>São Paulo</h3><p>Emerging market digital asset research.</p></div>
 
-<div class="card">
-<h3>London</h3>
-<p>Financial regulation and economic policy research.</p>
-</div>
+<div class="card"><h3>London</h3><p>Financial regulation and economic policy research.</p></div>
 
-<div class="card">
-<h3>Singapore</h3>
-<p>Blockchain innovation and Web3 technology.</p>
-</div>
+<div class="card"><h3>Singapore</h3><p>Blockchain innovation and Web3 technology.</p></div>
 
-<div class="card">
-<h3>Hong Kong</h3>
-<p>Asian liquidity market analysis.</p>
-</div>
+<div class="card"><h3>Hong Kong</h3><p>Asian liquidity market analysis.</p></div>
 
-<div class="card">
-<h3>Dubai</h3>
-<p>Financial innovation and capital markets.</p>
-</div>
+<div class="card"><h3>Dubai</h3><p>Financial innovation and capital markets.</p></div>
 
 </div>
 
 </section>
+
 
 <footer>
 
@@ -321,19 +354,19 @@ International Digital Asset & AI Research Institute
 
 </footer>
 
+
 <script>
 
-particlesJS("particles-js", {
-"particles":{
-"number":{"value":60},
-"size":{"value":3},
-"move":{"speed":1},
-"line_linked":{"enable":true}
+particlesJS("particles-js",{
+particles:{
+number:{value:60},
+size:{value:3},
+move:{speed:1},
+line_linked:{enable:true}
 }
 });
 
 </script>
 
 </body>
-
 </html>
