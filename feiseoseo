@@ -1,0 +1,173 @@
+index.html<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<title>International Digital Asset Research Institute</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#0b0f18;
+color:white;
+}
+
+nav{
+background:#05080f;
+padding:20px;
+display:flex;
+justify-content:center;
+gap:40px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-size:16px;
+}
+
+header{
+text-align:center;
+padding:120px 20px;
+background:linear-gradient(#0b0f18,#111827);
+}
+
+header h1{
+font-size:42px;
+}
+
+section{
+max-width:1100px;
+margin:auto;
+padding:70px 20px;
+}
+
+.founder{
+display:flex;
+gap:40px;
+align-items:center;
+}
+
+.founder img{
+width:320px;
+border-radius:10px;
+}
+
+.team{
+background:#111827;
+padding:40px;
+border-radius:10px;
+}
+
+footer{
+text-align:center;
+padding:40px;
+background:#05080f;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#">Instituto</a>
+<a href="#">Fundador</a>
+<a href="#">Equipe</a>
+<a href="#">Pesquisa</a>
+<a href="#">Contato</a>
+
+</nav>
+
+<header>
+
+<h1>International Digital Asset Research Institute</h1>
+
+<p>Instituto Internacional de Pesquisa em Ativos Digitais</p>
+
+<p>Pesquisa global em ativos digitais, macroeconomia e sistemas financeiros.</p>
+
+</header>
+
+<section>
+
+<h2>Sobre o Instituto</h2>
+
+<p>
+O International Digital Asset Research Institute (IDARI) é uma organização global dedicada à pesquisa de ativos digitais, tecnologia blockchain e evolução dos sistemas financeiros.
+</p>
+
+<p>
+O instituto reúne economistas, pesquisadores de blockchain, cientistas de dados e analistas financeiros de diversos países.
+</p>
+
+</section>
+
+<section>
+
+<h2>Fundador</h2>
+
+<div class="founder">
+
+<img src="ricardo.jpg">
+
+<div>
+
+<h3>Prof. Dr. Ricardo Azevedo</h3>
+
+<p>
+Economista e pesquisador especializado em macroeconomia e ativos digitais com mais de 20 anos de experiência.
+</p>
+
+<p>
+Desde 2012 ele pesquisa Bitcoin, blockchain e ciclos de mercado digital.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Equipe Global</h2>
+
+<div class="team">
+
+<p>
+300+ pesquisadores em centros financeiros globais.
+</p>
+
+<p>
+
+Nova York  
+São Paulo  
+Londres  
+Singapura  
+Hong Kong  
+Dubai
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>International Digital Asset Research Institute</p>
+
+<p>© 2026 IDARI</p>
+
+</footer>
+
+</body>
+
+</html>
